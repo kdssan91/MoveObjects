@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveCubeToPoint : MonoBehaviour
+public class CubeController : MonoBehaviour
 {
-
-    public float speed =2f;
+    public float speed = 2f;
     public float jumpPower = 100f;
 
     Rigidbody rb;
@@ -25,7 +24,7 @@ public class MoveCubeToPoint : MonoBehaviour
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            rb.AddForce(Vector3.back * speed );
+            rb.AddForce(Vector3.back * speed);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
